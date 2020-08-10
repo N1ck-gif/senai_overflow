@@ -1,0 +1,8 @@
+// Arquivo que indicamos para o sequelize onde está os arquivos de configuração
+//dirname - pega todo caminho anterior a pasta
+const path = require("path");
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'Config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'Database', 'migrations')
+}

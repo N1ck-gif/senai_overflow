@@ -26,6 +26,14 @@ class Aluno extends Model {
         })
     }
 
+    // Este método faz associação com a classe Postagem
+    static associate(models) {
+        // O aluno tem muitas postagens
+        this.hasMany(models.Postagem, { foreignKey: "created_aluno_id" });
+
+        this.hasMany(models.Comentario);
+    }
+
 }
 
 module.exports = Aluno;

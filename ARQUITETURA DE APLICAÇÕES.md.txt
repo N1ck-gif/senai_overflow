@@ -52,7 +52,7 @@ listen() - app que vai ser responsável por rodar a aplicação
 CTRL+C(no terminal) - reinicia o servidor
 
 -------INICIALIZANDO UM SERVIDOR-------
-
+// Este método faz associação com a classe Postagem
 -Para abrir a janela do Power Shell dentro da pasta - SHIFT + BOTÃO DIREITO DO MOUSE
 
 -Verificar se o nodeJS está instalado - node -v ( mostra a versão do nodeJS )
@@ -171,8 +171,28 @@ SHIFT + ALT + SETA PARA BAIXO - duplica a linha
 
 A função do Router é mandar a requisição para a controller apropriada
 
+-------CRIANDO UMA MIGRATION-------
 
+npx sequelize migration:create --name "nome-da-migration" - cria uma migration
 
+-------CRIANDO A FUNCIONALIDADE POSTAGEM-------
+
+1 - npx sequelize migration:create --name "nome-da-migration" - executar este comando para criar a migration
+    Lá serão configuradas a criação da Tabela e dos campos
+
+2 - Criar na Model a classe "Postagem - Lá será onde vamos mapear o banco de dados
+
+3 - Criar na Controller o arquivo postagem.js - ela vai intermediar entre o arquivo "routes.js" e o banco de dados que está na model
+
+4 - Configurar a rota da aplicação no arquivo "routes.js" 
+
+-------CRIANDO A FUNCIONALIDADE DE APAGAR A POSTAGEM-------
+
+Sempre quando vamos deletar ou desativar algo utilizamos o método DELETE
+
+1 - Entre na pasta controller e crie o método delete
+
+2 - Configure a rota da aplicação no arquivo routes.js
 
 
 

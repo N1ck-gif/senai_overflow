@@ -14,6 +14,9 @@ module.exports = {
     //Diz o nome do database
     database: "senai_overflow",
 
+    // Descreve o processo do banco no console
+    logging: console.log,
+
     define: {
         //Diz quando foi a criação e a atualização de um campo
         timestamp: true,

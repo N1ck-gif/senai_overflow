@@ -2,8 +2,8 @@
 
 // Importando o express para que a aplicação rode no servidor criado
 const express = require('express');
-const rotas = require('./routes');
 require("./Database");
+const rotas = require('./routes');
 
 // Iniciando a aplicação
 const app = express();

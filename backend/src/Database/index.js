@@ -5,7 +5,6 @@ const dbConfig = require("../Config/database");
 
 const Aluno = require("../Models/Aluno");
 const Postagem = require("../Models/Postagem");
-const Postagem = require("../Models/Comentario");
 const Comentario = require("../Models/Comentario");
 
 //Instânciando a classe Sequelize e passando com argumento as configurações do banco de dados

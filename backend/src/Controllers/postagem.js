@@ -39,12 +39,8 @@ module.exports = {
     // Adiciona uma postagem
     async store( req, res ){
 
-        // Recupera o cabeçalho da requisição
-        // esta pegando o que tem no cabeçalho da requisição com o campo authorization
-        const token = req.headers.authorization;
-
-        // Aqui estamos semarando a palavra "Bearer" do id do aluno utlizando o método split e fazendo em forma de desestruturação
-        const [Bearer, created_aluno_id] = token.split(" ");
+        // Pega o id do aluno logado
+        const created_aluno_id = req.alunoId;
 
         // Pega o que esta no corpo da requisição
         const { titulo, descricao, imagem, gists } = req.body;

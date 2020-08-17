@@ -79,8 +79,7 @@ module.exports = {
     // Deleta uma postagem
     async delete(req, res) {
         //pegando o id do aluno que está logado
-        const token = req.headers.authorization;
-        const [Bearer, created_aluno_id] = token.split(" ");
+        const created_aluno_id = req.alunoId;
 
         // pegando o id da postagem para apagar
         const { id } = req.params;

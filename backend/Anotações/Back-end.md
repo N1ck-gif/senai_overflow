@@ -2,11 +2,20 @@
 
 ## Conceitos
 
-API
+**API** - Se uma Interface de um sistema é criada para que um usuário final possa usa-la, a API é desenvolvida para que o sistema possa usar as funcionalidades de um outro sistema. A API é a Interface ideal para que um sistema se comunique com outro sistema.
 
-Web sevices
+**Interface** - o termo interface _(ou protocolo)_ é uma referência à característica que permite a construção de interfaces que isolam do mundo exterior os detalhes de implementação de um componente de software.
 
-Interface
+**API Rest** - Rest esta ligado ao desenvolvimento de aplicações Web ou Web Services, que fazem a comunicação através do protocolo HTTP.
+
+A idéia principal do Rest é poder fazer através de simples chamadas HTTP a manipulação básica dos dados de uma aplicação.
+
+**Web Services** - Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis.
+
+**EndPoint** - O EndPoint é o que o serviço expoem. Ele tem 3 principais características:
+-Address - Onde o serviço está hospedado
+-Binding - Como o serviço pode ser acessado
+-Contract - O que pode ser visto no serviço
 
 O navegador manda um requisição para o servidor
 E o servidor devolve a reposta com os dados da página
@@ -29,7 +38,7 @@ Os dados que vão no corpo dessa resposta ela pode ter vários formatos
 
 Os dados que ficam na URL são query parameters
 
-NODE JS - Runtime Javascript, roda do lado do servidor
+**NODE JS** - Runtime Javascript, roda do lado do servidor
 
 O comando "node" é usado para executar arquivos JavaScript no computador
 
@@ -220,7 +229,7 @@ Quando colocamos o async no começo da função, estamos dizendo que esta funç�
 
 **Basic Auth** - pede um usuário e senha no cabeçalho da requisição. Ele envia duas informações, o prefixo que é o tipo de autorização e um dado embaralhado, que é a codificação do usuário e senha passados
 
-**Bearer Token** - 
+**Bearer Token** - Estabelece uma maneira compactada para transmitir um objeto JSON, garante a segurança das informações e é utilizado para trafegar dados de autenticação entre dois clientes.
 
 **JWT** - padrão de mercado que defini como transmitir e armazenar objetos JSON de forma compacta e segura entre diferentes aplicações. Ele é formado por 3 seções: HEADER, PAYLOAD E SIGNATURE
 
@@ -251,9 +260,9 @@ _Para verificar se o pacote foi instalado, basta ir no package.json e procurar p
 
 4. Configurar a Controller no arquivo sessao.js
 
-O hash é algo que é gerado e não tem retorno, ou seja, não tempo como descriptografar
+O hash é algo que é gerado e não tem retorno, ou seja, não tem como descriptografar
 
-O Token serve para verificar se a requisição qeu estamos enviando para nossa api ela pode ser atendida ou não
+**Token** - serve para verificar se a requisição que estamos enviando para nossa api ela pode ser atendida ou não
 
 O arquivo auth.json vai guardar a chave da nossa aplicação em formato de rash
 
@@ -263,6 +272,21 @@ Para proteger as nossas rotas, usamos a estratégia de Middlewares
 
 Middlewares - algo que vai rodar antes ou no meio de alguma coisa
 
+
+
+
+-------------------------------------------------------------------
+
+**React** - é uma biblioteca JavaScript para construção de interfaces de usuário.
+
+Tudo no React é baseado em componentes.
+
+npx create-react-app nomeProjeto - cria um projeto React
+
+
+
+
 Duvidas para segunda:
     -como funciona o await
     -se eu insiro o token da Maisa na hora de listar a postagem, pq tambem carrega a do Gustavo?
+    - para que serve o postman?

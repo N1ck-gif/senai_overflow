@@ -31,8 +31,7 @@ module.exports = {
     async store(req, res){
 
         // recuperar o id do usuário
-        const token = req.headers.authorization;
-        const [ Beader, aluno_id ] = token.split(" ");
+        const aluno_id = req.alunoId;
 
         // recuperar o id da postagem
         const { postId } = req.params;

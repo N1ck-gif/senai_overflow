@@ -21,3 +21,5 @@ O ponto significa que ele vai subir todos os arquivos que não estão adicionado
 9. **git remote add origin linkDoPasso2** - adiciona um repositório remoto la na web
 
 10. **git push origin master** - indica que vai subir para o repositório o que está na branch_master
+
+_Quando eu quero adicionar tudo apenas de uma pasta, digito "git add nomePasta/."_

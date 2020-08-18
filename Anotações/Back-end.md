@@ -223,7 +223,9 @@ Quando não colocamos o await, o resultado vai ser uma promisse ou vazio
 
 Quando colocamos o async no começo da função, estamos dizendo que esta função pode ser pausada para esperar um retorno
 
+O Await é usado no caso de vc ter que esperar um retorno
 
+Quando preciso esperar a resposta para executar o proximo passo, coloca o await
 
 # Autorização
 
@@ -272,21 +274,8 @@ Para proteger as nossas rotas, usamos a estratégia de Middlewares
 
 Middlewares - algo que vai rodar antes ou no meio de alguma coisa
 
-
-
-
 -------------------------------------------------------------------
 
-**React** - é uma biblioteca JavaScript para construção de interfaces de usuário.
-
-Tudo no React é baseado em componentes.
-
-npx create-react-app nomeProjeto - cria um projeto React
 
 
 
-
-Duvidas para segunda:
-    -como funciona o await
-    -se eu insiro o token da Maisa na hora de listar a postagem, pq tambem carrega a do Gustavo?
-    - para que serve o postman?

@@ -4,6 +4,6 @@ const app = require('./app')
 
 // listen() - vai ser responsável por rodar a aplicação
 // O método precisa saber qual a porta o servidor vai rodar e uma função
-app.listen(3000, () => {
+app.listen(3333, () => {
     console.log('Servidor rodando na porta 3000');
 }); 

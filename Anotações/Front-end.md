@@ -50,3 +50,5 @@ _Caso não queira criar uma div principal podemos usar <> </>, que são conhecid
 **npm install styled-components** - instala uma biblioteca de estilização.
 
 Todos os componentes das páginas ficaram dentro da pasta Page
+
+**npm install axios** - instala a biblioteca axios para consumir a API enviada do back-end

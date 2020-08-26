@@ -25,7 +25,7 @@ export const ImageCropped = styled.div`
     border-right: 0px;
 
     > img{
-        width: 800px;
+        width: 850px;
         margin-left: -110px;
     }
 `;

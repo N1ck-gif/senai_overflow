@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 
-import Login from "./Pages/Login"
+import Routes from "./routes";
 import { GlobalStyle } from "./Styles/GlobalStyle";
 
 function App() {
   return (
     <>
-      <Login />
+      <Routes />
       <GlobalStyle />
     </>
   );

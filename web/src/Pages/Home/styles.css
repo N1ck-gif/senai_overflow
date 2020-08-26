@@ -1,0 +1,217 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary);
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.content{
+    width: 100%;
+    background-color: var(--primary);
+
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.header input {
+    width: 95%;
+    height: 80%;
+    margin: 5px auto;
+
+}
+
+.header div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header p{
+    color: var(--red);
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 3px var(--white), 0px 0px 3px var(--white);
+    
+    cursor: default; 
+}
+
+.header:hover {
+    color: var(--primary);
+    transition: 0.8s;
+}
+
+.header .btnSair{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.content .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.profile a {
+    color: var(--gray);
+    margin-top: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.profile strong{
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.profile p{
+    font-size: 25px;
+}
+
+.feed{
+    width: 100%;
+    /* Para ter a barra de rolagem, o componente precisa ter tamanho fixo */
+    height: calc(100vh - 70px);
+    margin-top: 10px;
+    display: flex;
+    /* Cria a Barra de Rolagem dentro do container feed */
+    overflow-y: auto;
+
+    flex-direction: column;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #dad7d7;
+}
+
+.card-post{
+    width: 70%;
+    height: fit-content;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 20px auto;
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+.card-post header{
+    display: flex;
+    align-items: center;
+}
+
+.card-post header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.card-post header strong {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-post header p {
+    font-size: 14px;
+    margin-left: 5px;
+    color: var(--gray);
+}
+
+ .card-post header .icon{
+    margin-left: 10px;
+}
+
+.card-post body {
+    margin-left: 10px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-post body strong {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-post body p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.card-post body img {
+    margin-top: 10px;
+    max-height: 500px;
+    align-self: center;
+}
+
+.card-post footer {
+    margin-top: 10px;
+}
+
+.card-post footer p{
+    margin-top: 10px;
+}
+
+.card-post footer h1 {
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.card-post footer h1:hover {
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--red);
+}
+
+.card-post footer section header p {
+    margin-top: 0;
+}
+
+.card-post footer section {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+
+.card-post footer section p {
+    margin-top: 10px;
+    margin-left: 10px;
+
+    font-size: 14px;
+}

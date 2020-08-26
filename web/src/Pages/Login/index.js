@@ -12,16 +12,21 @@ import {
 
 import foto from "../../Assets/foto.jpg";
 import { api } from "../../Services/api";
+import { useHistory } from "react-router-dom";
+import { signIn } from "../../Services/security";
 
 // *********************************************************
 
 const FormLogin = (props) => {
+  const history = useHistory();
 
   // JSON com os campos do formulário
   const [alunoLogin, setAlunoLogin] = useState({
     email: "",
     senha: "",
   });
+
+  // *****************************************************************************
 
   const entrar = async (e) => {
     // Faz com que a página não tenha o comportamento padrão, ou seja, não temos mais o refresh da página
@@ -32,10 +37,10 @@ const FormLogin = (props) => {
 
       if (retorno.status === 201) {
         // Vai logar na aplicação
+        signIn(retorno.data);
 
         // Redirecionar na tela home
-
-        window.alert("Logado com sucesso");
+        return history.push("/home");
       }
     } catch (error) {
       if (error.response) {
@@ -46,12 +51,13 @@ const FormLogin = (props) => {
     }
   };
 
+  // *****************************************************************************
+
   const handlerInput = (e) => {
     // Os 3 pontos significa o que ele ja tinha
     // O colchete diz que o que esta dentro é uma variavel
     // Vai alterar apenas o campo selecionado
 
-    
     setAlunoLogin({ ...alunoLogin, [e.target.id]: e.target.value });
   };
 
@@ -194,9 +200,7 @@ const FormRegistrar = (props) => {
   );
 };
 
-
 // *********************************************************
-
 
 const Login = () => {
   const [mostrarForm, setMostrarForm] = useState("login");

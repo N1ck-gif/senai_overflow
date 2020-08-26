@@ -45,10 +45,33 @@ _Caso não queira criar uma div principal podemos usar <> </>, que são conhecid
 
 **npm start** - inicia o servidor React.
 
-**npm install cors**
+**npm install cors** - instala o cors
+
+**cors** - forma do back-end habilitar a origem, ou seja, quem pode consumir a API.
 
 **npm install styled-components** - instala uma biblioteca de estilização.
 
 Todos os componentes das páginas ficaram dentro da pasta Page
 
 **npm install axios** - instala a biblioteca axios para consumir a API enviada do back-end
+
+**Habilita o ement para o ReactJS**
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+**npm install react-icons** - instala uma biblioteca de icones do React
+_Nome do site de busca desses icones: fontawesome.com_
+_Os icones exportados são nada mais nada menos que componentes_
+
+**npm install react-router-dom** - implementa a navegação na nossa aplicação
+
+**CRTL + F2** - seleciona todos que tem o mesmo nome no documento
+
+**localStorage** - é uma área do navegador onde podemos guardar informações da nossa aplicação
+
+tsx - é utilizado em arquivos typescript.
+
+ALT + F - edenta o código
+
+replace() - substitui um componente por outro
+

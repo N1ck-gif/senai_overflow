@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 20px;
     }
 
-    input:hover, button:hover{
+    input:hover, button:hover, textarea:hover{
         background-color: var(--red);
         transition: background-color 0.2s;
     }
@@ -59,5 +59,17 @@ export const GlobalStyle = createGlobalStyle`
     button:active{
         color: var(--gray);
         border: 1px solid var(--gray);
+    }
+
+    textarea {
+        color: var(--white);
+        background-color: var(--secondary);
+        font-size: 16px;
+        border: 1px solid var(--white);
+        padding: 10px;
+        font-weight: bold;
+        height: 30px;
+        transition: background-color 0.2s;
+        resize: none;
     }
 `

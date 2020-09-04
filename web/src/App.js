@@ -1,6 +1,6 @@
 // Tudo vai ficar dentro deste componente App
 
-import React, { useState } from 'react';
+import React from 'react';
 
 import Routes from "./routes";
 import { GlobalStyle } from "./Styles/GlobalStyle";

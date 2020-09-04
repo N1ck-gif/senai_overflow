@@ -103,6 +103,9 @@ const FormLogin = (props) => {
 // *********************************************************
 
 const FormRegistrar = (props) => {
+
+  const history = useHistory();
+
   const [alunoRegistrar, setAlunoRegistrar] = useState({
     ra: "",
     nome: "",
@@ -118,11 +121,13 @@ const FormRegistrar = (props) => {
       const retorno = await api.post("/alunos", alunoRegistrar);
 
       if (retorno.status === 201) {
+
         // Vai logar na aplicação
+        signIn(retorno.data);
 
         // Redirecionar na tela home
+        return history.push("/home");
 
-        window.alert("Registrado com sucesso");
       }
     } catch (error) {
       if (error.response) {

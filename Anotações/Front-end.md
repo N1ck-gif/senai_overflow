@@ -69,9 +69,11 @@ _Os icones exportados são nada mais nada menos que componentes_
 
 **localStorage** - é uma área do navegador onde podemos guardar informações da nossa aplicação
 
-tsx - é utilizado em arquivos typescript.
+**tsx** - é utilizado em arquivos typescript.
 
-ALT + F - edenta o código
+**ALT + F** - edenta o código
 
-replace() - substitui um componente por outro
+**replace()** - substitui um componente por outro
+
+**current** - da acesso a tag que está presente no componente no momento que vamos fazer a alteração
 

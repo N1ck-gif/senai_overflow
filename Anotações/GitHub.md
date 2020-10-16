@@ -6,7 +6,7 @@
 
 3. **git init** - cria uma pasta oculta lá no projeto chamada .git 
 
-4. **git config user.name** - mostra qual o nome de usuário que está na máquina, se não estiver com o nome certo, bas digitar "git config user.name nomeNovo";
+4. **git config user.name** - mostra qual o nome de usuário que está na máquina, se não estiver com o nome certo, basta digitar "git config user.name nomeNovo";
 
 5. **git config --global user.email teste@gmail.com** - insere o email da sua conta do github e depois para confirmar basta apenas digitar "git config --global user.email"
 
